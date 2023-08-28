@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Architecture Page</title>
+    <link rel="stylesheet" href="TiaanStylesSheet.css">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+</head>
+<body>
+    
+    <header class="header">
+
+        <nav class="navbar">
+            <img id="logoimg" src="logo.png" class="logotop">
+            <a href="learn_page.html" class="active">Learn More</a>
+        </nav>
+    </header>
+    <main>
+       
+      <legend class="text">
+
+    <h1>Web Architecture</h1>
+    <p>To start off, a web application is similar to a normal application except for the fact that it works over the internet. The interactions between applications, middleware systems, and databases on the internet are at the centre of web application architecture. It ensures multiple applications can work simultaneously together. To understand this concept better I will give an example. </p>
+    <p>When opening a webpage, a user types a URL into the address bar of a web browser and clicks Go, that specific web address is requested. In response to the request, the server transmits files to the browser. After that, the browser runs the files to display the requested page. The user can finally engage with the website. The code that the web browser parses is the most crucial point to keep in mind here. A web application operates similarly. There may or may not be precise instructions in this code that tell the browser how to react to the various forms of user input. As a result, a web application architecture must have all the supporting components and external application interfaces for the full software program, in the example above, a website. In the present world, web-based communication is used by most apps and devices, a significant amount of global network traffic, and the web application architecture.</p>
+    <p>Any typical web application has two separate programs (codes) running simultaneously. Which are: <br>
+        Client-side code: Code that runs in the browser and reacts to user input. <br>
+        Server-side code: Code that runs on the server and reacts to HTTP requests. </p>
+    <p>What the code on the server will do in relation to the code in the browser is decided by the web developer (team) creating the web application. C#, Java, JavaScript, Python, PHP, Ruby, etc. are used to create server-side programming. A server can be used to run any program that can reply to HTTP requests. The user's requested page is created and various forms of data, such as user profiles and user input, are stored by the server-side code. By no means is it ever seen by the user.</p>
+    <p>The client-side code is created using a combination of CSS, HTML, and JavaScript. The web browser parses this code. Client-side code, as opposed to server-side code, is viewable and modifiable by the user. It responds to input from users. The client-side code cannot directly access server files; it can only connect with the server through HTTP requests.</p>
+    
+    <h2>Web Application Components</h2>
+    <p>Any of the following are what we refer to when we say "web application components":</p>
+    <h3>UI/UX</h3>
+    <p>Components of the UI/UX of a web application, such as activity logs, dashboards, notifications, settings, statistics, etc. These components have no impact on the operation of a web applications architecture . Instead, they are a component of a web app's interface layout strategy.</p>
+    <h3>Structural components</h3>
+    <p>Client and server sides are the two main structural elements of a web application.</p>
+    <h3>Client component</h3>
+    <p>Client Component: CSS, HTML, and JS are used to create the client component. No alterations to the user's operating system or device are necessary because it is already present in the web browser. The client component represents the functionality of a web application with which the end user interacts.</p>
+    <h3>Server component</h3>
+    <p>Server Component - The server component can be created using a single programming language or framework, or a combination of several, such as Java, .Net, NodeJS, PHP, Python, and Ruby on Rails. App logic and database are at least two of the server component's components. The former serves as the web application's primary command centre, while the latter houses all the persistent data.</p>
+    <h2>Web application models</h2>
+    <p>A web application's model is chosen based on the total number of servers and databases needed for it. Any one of the following three could be it:</p>
+    <h3>One Web server, one database</h3>
+    <p>It is the simplest straightforward and least trustworthy web app component model. A single server and database are both used in this model. Such a model guarantees that a web app will crash as soon as the server crashes. Therefore, it isn't very trustworthy. Real web applications don't often employ the one web server, one database web component approach. It is mostly used to carry out test projects and to learn and comprehend the foundations of the web application.</p>
+    <h3>Multiple Web Servers, One Database (At a Machine Rather than the Web server)</h3>
+    <p>With this kind of web application component paradigm, no data is kept on the webserver. The web server receives data from a client, processes it, and then inputs it into a database that is run independently of the server. The term "stateless architecture" is also sometimes used to describe this. <br>
+        For this web application component paradigm, at least two web servers are needed. All of this is done to prevent failure. The other web server will take over even if one goes offline. The web app will continue to run while all requests are automatically forwarded to the new server. In light of this, dependability is improved over the single server with inherent database paradigm. But if the database malfunctions, the online application will likewise stop working</p>
+    <h3>Multiple Web Server, Multiple Databases</h3>
+    <p>Due to the lack of a single point of failure for either the databases or the webservers, it is the most effective component architecture for online applications. For this type of model, there are two choices. Either to store the same data in each database used, or to spread it equally among them.
+        For the former instance, normally no more than 2 databases are needed, however for the latter case, some data may become unavailable in the event of a database crash.
+        </p>
+    <h2>Types of Web Application Architecture</h2>
+    <p>An interaction pattern between different web application components is known as a web application architecture. The distribution of the application logic between the client and server sides determines the type of web application architecture.</p>
+    <h3>There are three primary types of web application architecture. Each one of them is explained as follows:</h3>
+    <h3>Single-Page Applications (SPAs) - SPAs </h3>
+    <p>Single-Page Applications (SPAs) - SPAs allow for a dynamic interaction by updating the content of the current page rather than downloading entirely new pages from the server each time a user action is requested. <br>
+        The cornerstone for enabling page communications and therefore making SPAs a reality is AJAX, a condensed form of Asynchronous JavaScript and XML. Single-page applications resemble traditional desktop programs in that they don't allow disruptions to the user experience. SPAs are created in such a way that they ask for most of the required content and information elements. This results in the acquisition of an interactive and intuitive user experience. </p>
+    <h3>Microservices </h3>
+    <p>These are streamlined, compact services that carry out a single function. With the help of the Microservices Architecture framework, developers may increase productivity and hasten the deployment process overall. <br>
+        An application built utilizing the microservices architecture has components that are not reliant on one another. They don't necessarily need to be developed using the same programming language as a result. As a result, developers using the Microservices Architecture are free to choose their preferred technology stack. It facilitates quicker and easier application development.</p>
+    <h3>Serverless Architectures </h3>
+    <p>Serverless Architectures - In this sort of web application architecture, the server and infrastructure management are outsourced to a third-party cloud infrastructure services provider. <br>
+        This method has the advantage of letting applications run code logic without having to worry about infrastructure-related activities. When the web application development business doesn't want to manage or support the servers or the hardware, they have built the web application for, the Serverless Architecture is the ideal option.</p>
+       
+ 
+</legend>  
+<legend class="photos">
+    <img id="legendimg2" src="WebArch2.gif" alt="Diagram about web architecture">
+    <img id="legendimg" src="WebArch.png" alt="Web architecture diagram">
+    <img id="legendimg4" src="WebArch4.webp" alt="" >
+<img id="legendimg2"src="WebArch3.png" alt="">
+</legend>
+        </main>
+</body>
+</html>
